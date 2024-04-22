@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            .box1{
+               background-color: blue;
+                /* padding:20px 50% 20px 50%; */
+                padding:20px 50% 20px 50%; 
+                position: sticky;
+                position: -webkit-sticky;
+                top:0;
+                width: 100%;
+            }
+            a{
+                text-decoration: none;  
+                color:white;
+                padding: 0 20px 0 20px;
+            }
+            h1{text-align: center;
+                color: red;
+                border-style: ridge;
+                border-color: black;
+                border-radius: 1000;
+                border-width: 20xp;}
+                .box2{text-align: right;}
+                .box2{font-size: larger;}
+                body{background-image: url('the-siasat-daily-placeholder.jpg');
+                background-position: center;}
+                form{color: green;}
+                h2{
+                text-align: center;
+                }
+                body{
+                    max-width: 98vw;
+                height: 90vh;
+                overflow: unset;
+                }
+                
+        </style>
+    </head>
+    <body>
+        <div class="box1">
+            <a href="">
+                Home
+            </a>
+            <a href="">
+                Telangana
+            </a>
+            <a href="">
+               Video Matrimony Blog
+            </a>
+            <a href="">
+                Contact Us
+            </a>
+            <a href="">
+                Log In
+            </a>
+        </div>
+        <h2 id="dateTime"></h2>
+        <form>
+            Enter your name: 
+            <input type="text" id="usr"><br>
+            Enter your password:
+            <input type="password" id="pwd"><br>
+            <button onclick="display()">Login</button> 
+        </form>
+          <h2 id="wish">
+            </h2>
+            <H1 class="heading1">Telangana: Blast at chemical factory in Sangareddy kills at least 7</H1>
+        <p>Hyderabad: A massive fire broke out in a chemical industry on the outskirts of Chandapur village of Hatnura Mandal in Sangareddy district due to a reactor blast on Wednesday, April 3.The blast, which occurred around 5 pm at SB Organics, triggered a fire. At least 7 have been reportedly killed in the incident with several feared injured. Many workers were reportedly caught in the fire. The director of the Sangareddy firm and six other workers are reportedly among those who were killed and at least 25 have reportedly been grievously injured in the blast.“The reactor exploded at the pharma company and people around it were thrown away in its impact… So far four people have died…10-15 people sustained injuries. They have been shifted to a hospital and are undergoing treatment,” a senior police official told PTI earlier.Relief operations are underway in the affected area. Narsapur MLA Sunitha Laxma Reddy and BJP candidate for Medak Parliamentary constituency Raghunandan Rao visited the blast site in Sangareddy. </p><br>
+            <img src="Reactor-blast-at-Sangareddy-in-Telangana-780x470.jpg"><br>
+            <marquee>
+                for more details click the link below 
+            </marquee>
+         <a href="https://www.siasat.com/telangana-7-feared-dead-in-a-reactor-explosion-at-sangareddy-3003427/">read more</a><br>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/RF1xIAzZ2aI?si=OWFAnW5-UEdnjQ7a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe><br>
+       <audio controls>
+        <source src="factory.mpeg">
+        </source>
+    </audio>
+            <h1>Ramadan Kareem:رمضان المبارک میں دنیابھرکی خواتین کیسےکرتی ہیں سحروافطارکا انتظام ؟</h1>
+            <div class="box2"><p>دنیا بھر کی مسلم خواتین سارا سال امور خانہ داری میں مصروف رہنے کے باوجود،رمضان المبارک کے بابرکت مہینے میں خصوصی عبادت کے ساتھ سحری اور افطاری کا انتظام کرتی ہیں۔جب رمضان المبارک میں پورا خاندان ایک ساتھ بیٹھ کر سحر و افطار میں بننے والے ان خاص اور روایتی پکوان سے لطف اندوز ہوتا ہے،گھر کی عورتوں اور خواتین کے چہرے دمک اْٹھتے ہیں۔ وہ خوشی خوشی رشتے داروں اور دوست و احباب کے ساتھ مل کر افطار پارٹیاں بھی ترتیب دیتی ہیں۔کچھ گھروں میں پہلا روزہ رکھنے والے بچوں کی روزہ کشائی کی تقریب ادا کی جاتی ہے۔
+        
+                در حقیقت سحری اور افطاری کے پکوان،روایات اور ثقافت کے آئینہ دار ہوتے ہیں۔ہمارے ہاں،چھولے،پکوڑے،دہی بڑے،کچوری فروٹ چاٹ،سموسے،کھجور اور شربت وغیرہ افطار کا لازمی جزو ہیں،جب کہ سحری میں زیادہ تر ، روٹی ، پراٹھے ، سالن ، دہی، کباب اور لسی یا چائے کا اہتمام کیا جاتا ہے۔</p></div>
+                <script>
+                    function display(){
+                   name = document.getElementById("usr").value;
+                   pwd = document.getElementById("pwd").value;
+                   if(name=="" || pwd==""){
+                       document.getElementById("wish").innerHTML = "All fields are mandatory";
+                   }
+                   else{
+                       document.getElementById("wish").innerHTML = "Successfully logged in";
+                   }
+               }
+               function display1(){
+                   dt = new Date();
+                   yr = dt.getFullYear();
+                   mn = dt.getMonth()+1;
+                   dy = dt.getDate();
+                   hr = dt.getHours();
+                   min = dt.getMinutes();
+                   sec = dt.getSeconds();
+                   document.getElementById("dateTime").innerHTML = dy+"-"+mn+"-"+yr+" "+hr+":"+min+":"+sec;
+               }
+               display1();
+               setInterval(display1,1000);
+               </script>
+    </body>
